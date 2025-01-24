@@ -41,3 +41,26 @@ console.log("B",myArr)
 const myn2=myArr.splice(1,3)
 console.log(myn2);
 console.log("c",myArr)
+
+const marvel_heroes=['Thor','Iron-man','Captain-America','Spiderman']
+const dc_heroes =['superman','flash','batman']
+// console.log(marvel_heroes)
+// console.log(marvel_heroes[1])
+
+// const heroes= marvel_heroes.concat(dc_heroes)
+// console.log(heroes);
+
+// using Spread operator(...)
+
+const new_heroes=[...marvel_heroes,...dc_heroes]
+console.log(new_heroes);
+
+
+console.log(Array.isArray("saurav"))
+console.log(Array.from("7410566657saurav"));
+console.log(Array.from({name:"saurav"}));//Interesting
+
+let score=100
+let score1=200
+let score2=300
+console.log(Array.of(score,score1,score2));//Interesting
